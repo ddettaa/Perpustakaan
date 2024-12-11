@@ -1,0 +1,244 @@
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+header {
+    background-color: #00509e; /* Blue */
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    box-shadow: 0px 2px 5px rgba(0, 80, 158, 0.2); /* Blue shadow */
+}
+
+nav {
+    background-color: #e63946; /* Red */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    box-shadow: 0px 4px 8px rgba(230, 57, 70, 0.2); /* Red shadow */
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 0 20px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #ffb703; /* Yellow */
+    color: #ffffff;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow */
+}
+
+/* Form Styling */
+form {
+    display: contents;
+    flex-direction: column;
+    gap: 15px;
+}
+
+h1, h2 {
+    color: #00509e; /* Blue */
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+button, input[type="submit"] {
+    background-color: #00509e; /* Blue */
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+button:hover, input[type="submit"]:hover {
+    background-color: #e63946; /* Red */
+    transform: scale(1.05);
+}
+
+input, select, textarea {
+    width: 50%; /* Set input fields to 50% width */
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #333333;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #f8f9fa;
+    color: #333;
+    box-shadow: inset 0px 2px 5px rgba(0, 80, 158, 0.1); /* Blue shadow inside */
+}
+
+/* Set margin-bottom between input fields */
+input, select {
+    margin-bottom: 1px; /* Add margin between fields */
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+table td {
+    padding: 12px 15px;
+    text-align: center;
+    vertical-align: middle; /* Ensures content is vertically centered */
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #003865; /* Blue background for header */
+    color: white;
+    font-weight: bold;
+    padding: 12px 15px;
+    text-align: center;
+    vertical-align: middle; /* Ensures content is vertically centered */
+    border-bottom: 1px solid #ddd;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #00509e; /* Blue */
+    color: #ffffff;
+    font-size: 14px;
+    margin-top: 40px;
+    box-shadow: 0px -2px 8px rgba(0, 80, 158, 0.2); /* Blue shadow */
+}
+
+/* Button styles for edit and delete actions */
+
+/* Responsive Styles */
+@media (max-width: 1080px) {
+    nav a {
+        font-size: 14px;
+        margin: 0 10px;
+        padding: 8px 15px;
+    }
+
+    .container {
+        margin: 20px auto;
+    }
+
+    table {
+        font-size: 14px;
+    }
+}
+
+/* Button styles */
+.btn {
+    display: inline-block; /* Ensure button is treated as inline element */
+    padding: 8px 16px;
+    border-radius: 6px;
+    background-color: #00509e; /* Blue */
+    color: #ffffff; /* White text */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    transition: all 0.3s ease;
+    margin: 5px 0; /* Prevent excessive space */
+}
+
+/* Hover effect for all buttons */
+.btn:hover {
+    background-color: #e63946; /* Red on hover */
+    transform: scale(1.05);
+}
+
+/* Add Button */
+.btn.add {
+    background-color: #ff0707; /* Green */
+}
+
+.btn.add:hover {
+    background-color: #d64040; /* Darker Green on hover */
+}
+
+/* Edit Button */
+.btn.edit {
+    background-color: #00509e; /* Blue */
+}
+
+.btn.edit:hover {
+    background-color: #003865; /* Darker Blue on hover */
+}
+
+/* Delete Button */
+.btn.delete {
+    background-color: #e63946; /* Red */
+}
+
+.btn.delete:hover {
+    background-color: #c82333; /* Darker Red on hover */
+}
+
+/* Margin adjustments for buttons */
+.action-buttons a {
+    margin: 5px; /* Add spacing around buttons */
+}
+
+img {
+    max-width: 5%;
+    height: auto;
+}
+
+/* Eye icon styling */
+.toggle-password {
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.icon-eye {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+/* Make sure the input fields are 50% width in containers */
+input[type="text"], input[type="password"], select {
+    width: 50%; /* Ensure they take up 50% width inside the form */
+}
+
+/* Smaller "Simpan" Button */
+button[type="submit"] {
+    padding: 6px 12px; /* Reduce padding for smaller button */
+    font-size: 14px; /* Smaller font size */
+    border-radius: 20px; /* Slightly smaller border radius for a more compact look */
+    width: 150px; /* Set a fixed width for the button */
+    margin-top: 15px; /* Add space above the button */
+}

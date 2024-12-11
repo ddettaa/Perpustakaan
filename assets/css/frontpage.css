@@ -1,0 +1,177 @@
+/* Global Styles for Front Page */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa; /* Light grey background */
+    color: #333333; /* Dark text for readability */
+}
+
+header {
+    background-color: #003865; /* Blue */
+    color: #ffffff;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    background-color: #e63946; /* Red */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 0 15px;
+    padding: 8px 16px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #ffb703; /* Yellow */
+    transform: scale(1.1);
+}
+
+.hero {
+    background: linear-gradient(rgba(0, 56, 101, 0.8), rgba(0, 56, 101, 0.8)), url('../images/campus-background.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+.hero button {
+    background-color: #00509e; /* Blue */
+    color: #ffffff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.hero button:hover {
+    background-color: #ffb703; /* Yellow */
+    transform: scale(1.1);
+}
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 40px 20px;
+    background-color: #ffffff; /* White background */
+    gap: 20px;
+}
+
+.feature-card {
+    background: #f9f9f9; /* Light grey */
+    text-align: center;
+    width: 280px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.feature-card img {
+    width: 80px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.feature-card h3 {
+    font-size: 20px;
+    color: #003865; /* Blue */
+    margin-bottom: 10px;
+}
+
+.feature-card p {
+    font-size: 14px;
+    color: #555555; /* Dark grey */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #003865; /* Blue */
+    color: #ffffff;
+    font-size: 14px;
+    margin-top: 40px;
+    box-shadow: 0px -3px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Animations */
+.hidden {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease-out;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    nav a {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .features {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .feature-card {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+/* Button focus state for accessibility */
+button:focus, nav a:focus {
+    outline: 3px solid #ffb703; /* Highlighting focused elements */
+    outline-offset: 4px;
+}

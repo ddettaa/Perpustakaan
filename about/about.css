@@ -1,0 +1,212 @@
+html {
+    font-family: "Arial", sans-serif;
+}
+
+body {
+    position: flex;
+    width: auto;
+    height: auto;
+    border-radius: 2rem;
+    background: conic-gradient(#00509e 25%, #fff 25%, #fff 50%, 
+                               #00509e 50%, #00509e 75%, #fff 75%, 
+                               #fff 100%, #00509e 100%);
+    background-size: 2rem 2rem;
+    animation: pattern 20s linear infinite;
+}
+
+@keyframes pattern {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 100% 100%;
+    }
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.wrapper {
+    width: 100%;
+    height: 200%;
+    display: flex;
+    justify-content: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.card {
+    border: 5px solid #e63946;
+    background-color: #e63946;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 9px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    margin-bottom: 5px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    display: flex;
+    height: 400px;
+    width: 250px;
+}
+
+:root {
+    --main-bg: #00509e;
+    --secondary-bg: #e63946;
+}
+
+.icons {
+    background-color: var(--secondary-bg);
+    font-size: 70px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.title {
+    font-size: 34px;
+    font-weight: bold;
+    color: white;
+}
+
+.deskripsi {
+    font-size: 30px;
+    color: white;
+    margin-top: 100px;
+    margin-bottom: 9px;
+    margin-left: -200px;
+    line-height: 1.5;
+    font-family: "Pixelify Sans", sans-serif;
+}
+
+.btn {
+    font-family: "silkscreen", sans-serif;
+    margin-top: auto;
+    padding: 10px 20px;
+    color: var(--secondary-bg);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--secondary-bg);
+    color: white;
+}
+
+.margin-body {
+    margin-top: 200px;
+    padding: 0px;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-bottom: 200px;
+}
+
+.slide {
+    width: 200px;
+    border-radius: 5px;
+    aspect-ratio: 1/2;
+    background-size: 100% 100%;
+    animation: slideshow 20s infinite alternate-reverse;
+}
+
+@keyframes slideshow {
+    0% {
+        background-image: url('download (1).jpg');
+    }
+    50% {
+        background-image: url('4fb40a10798f834dc72c71e3683e591e.jpg');
+    }
+    100% {
+        background-image: url('download (2).jpg');
+    }
+}
+
+.kotak {
+    border: 5px solid #e63946;
+    background-color: #e63946;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    margin-top: 50px;
+    margin-left: 50px;
+    border-radius: 9px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    margin-bottom: 5px;
+    display: flex;
+    height: 600px;
+    width: 1400px;
+}
+
+td {
+    padding: 10px 0;
+}
+
+.social-media {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.social-media ul {
+    list-style: none;
+    padding: 0;
+    margin-top: -250px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.social-media ul li {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Jarak antara ikon dan teks */
+    font-size: 20px;
+}
+
+.social-media ul li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s ease;
+}
+
+.social-media ul li a:hover {
+    color: white;
+}
+
+.social-media ul li i {
+    font-size: 30px; /* Ukuran ikon */
+    transition: transform 0.3s ease;
+}
+
+.social-media ul li i:hover {
+    transform: scale(1.2); /* Efek zoom saat hover */
+}
+
+.social-name {
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+}
+
+.social-media ul li a:hover {
+    color: white; /* Teks berubah warna saat hover */
+    transform: scale(1.2); /* Efek zoom berlaku untuk seluruh elemen a */
+}
+
+.social-media ul li a:hover i {
+    transform: scale(1.2); /* Efek zoom ikon tetap berlaku */
+}
+
+.social-media ul li a:hover .social-name {
+    transform: scale(1.2); /* Efek zoom teks */
+}
